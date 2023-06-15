@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/portafolios.png" type="image/x-icon"> 
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Criss </a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#Portafolio" onclick="seleccionar()">Portafolio</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/cv.png" alt="">
+            </div>
+            <h1>Cristian De La Cruz</h1>
+            <h2>Licenciado en Sistemas Computacionales Administrativos</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>¡Hola, mi nombre es Cristian Eduardo De La Cruz Cárdenas!</span> <br>
+                Soy un estudiante de noveno semestre de Licenciatura en Sistemas Computacionales Administrativos, con experiencia en el desarrollo de aplicaciones empresariales y soluciones tecnológicas. Busco oportunidades laborales y prácticas profesionales para aplicar mis habilidades y conocimientos.
+
+                Soy apasionado por la tecnología y el aprendizaje constante. Me destaco por trabajar en equipo y enfrentar desafíos. Estoy ansioso por unirme a un equipo talentoso y comprometido, y contribuir al éxito de la organización. También busco un lugar para realizar mis prácticas profesionales y adquirir experiencia práctica en un entorno laboral real.
+                
+                Agradezco la consideración y estoy disponible para discutir cualquier posible colaboración o responder preguntas adicionales. ¡Espero tener la oportunidad de contribuir a su organización!            </p>
+
+                <p>Como alguien apasionado por la aventura y el descubrimiento, estoy completamente dispuesto a viajar para conocer nuevos lugares. La idea de sumergirme en diferentes culturas, experimentar paisajes fascinantes y ampliar mi perspectiva me llena de emoción</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            5 De Junio de 2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            871 255 5690
+                        </li>
+                        <li>
+                            <strong>Correo</strong>
+                            cristian.cruz@uadec.edu.mx
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            <a href="https://runnotech.github.io/mx/"> https://runnotech.github.io/mx/</a>
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Torreón Coahuila, MX
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Director Gral Runnouni Technology</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-football"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>ARTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i> 
+                            <span>FREESTYLE</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button id="btnDescargar">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+
+            <button id="btnDescargar2">
+                Descargar Carta de presentación <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Html & Css</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <span>Node js</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Framework Bulma</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Linux</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Servidores</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Redes </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Inglés</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Empatía</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Organización y planificación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Capacidad de aprendizaje rápido</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Toma de decisiones</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Aprendizaje autónomo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Habilidades de negociación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+
+                    <div class="item izq">
+                        <h4>Escuela Secundaria</h4>
+                        <span class="casa">María Dolores Vigatá de Méndez</span>
+                        <span class="fecha">2013 - 2016</span>
+                        <p>La escuela secundaria "María Dolores Vigata de Méndez" se enfoca en proporcionar a sus estudiantes una educación completa y de alta calidad en el área de ofimática entre otras, para que puedan desarrollar habilidades y competencias que les permitan tener éxito en el mundo laboral actual.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Escuela Preparatoria</h4>
+                        <span class="casa">Instituto Grecolatino</span>
+                        <span class="fecha">2017 - 2019</span>
+                        <p>El Instituto Grecolatino es una institución educativa privada y de prestigio ubicada en la ciudad de Torreón, Coahuila, México. Se enfoca en brindar una educación bicultural y bilingüe, con un enfoque en la enseñanza de las culturas griega y latina</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Licenciatura</h4>
+                        <span class="casa">Escuela de Sistemas UT</span>
+                        <span class="fecha">2019 - 2023</span>
+                        <p>La Escuela de Sistemas Unidad Torreón es una institución educativa de prestigio en la región, que se enfoca en la formación práctica y en la capacitación de sus estudiantes en el área de tecnología y sistemas, con un enfoque en la aplicación de conocimientos y la formación integral de sus estudiantes.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Desarrollador</h4>
+                        <span class="casa">Runnouni Technology</span>
+                        <span class="fecha">Jul 2022 - Actualidad</span>
+                        <p>
+                            •	Manejo de los principales lenguajes de programación para el desarrollo de software. <br>
+                            •	Revisión del código existente para adaptarlo a nuevos requisitos. <br>
+                            •	Comunicación con los clientes para definir las necesidades de los usuarios. <br> 
+                            •	Diseño de soluciones de optimización tecnológica. <br>
+                            •	Realización de pruebas de aplicaciones para confirmar que producen las acciones deseadas. 
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Supervisor de área</h4>
+                        <span class="casa">Golf-Sports</span>
+                        <span class="fecha">Jun 2021 - Dic 2021</span>
+                        <p>•	Evaluación del rendimiento de los empleados según los criterios internos establecidos. <br>
+                            •	Supervisión de las tareas administrativas de la oficina para asegurar el constante flujo de trabajo. <br>
+                            •	Diseño, monitoreo y control del plan de trabajo mediante indicadores clave de desempeño.  <br>
+                            </p>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operador de producción</h4>
+                        <span class="casa">Yazaki</span>
+                        <span class="fecha">jun 2020 - oct 2020</span>
+                        <p>•	Realización en tiempo y forma de las tareas asignadas durante las paradas rutinarias. <br>
+                            •	Control de calidad y comprobación visual del producto acabado. <br>
+                            •	Programación y operación de maquinaria de producción. <br>
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- SECCION Portafolio -->
+    <section id="Portafolio" class="Portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <h3>Consejo: Desliza sobre las imágenes</h3>
+            
+
+            <div class="galeria">
+
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de Inventario</h3>
+                        <p>PHP & MySQL</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Agenda y Registro de usuarios</h3>
+                        <p>C#</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p12.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema Administrativo para taller</h3>
+                        <p>ASP.NET & Boostrap</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    
+                    <img src="img/pq.jpg" alt="">
+                    <div class="overlay">
+                        <h3>E-Commerce completo</h3>
+                        <p>HTML CSS JAVASCRIPT</p>
+                        <p>PHP & MySQL</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p13.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Landing page empresarial</h3>
+                        <p>HTML CSS JS</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p14.jpg" alt="">
+                    <div class="overlay">
+                        <h3>E-Commerce sin carrito de compras</h3>
+                        <p>HTML CSS JS</p>
+                    </div>
+                </div>
+                
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Pedidos de Pizza</h3>
+                        <p>Xamarin & SQLite</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p7.jpg" alt="">
+                    <div class="overlay">
+                        <h3>CRUD de Alumnos</h3>
+                        <p>C# .Net Framework & SQLite</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p11.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Calculadora Sencilla</h3>
+                        <p>Android Studio</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p9.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Reporte de Tickets</h3>
+                        <p>Kotlin & FireBase</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p10.jpg" alt="">
+                    <div class="overlay">
+                        <h3>GPS</h3>
+                        <p>Kotlin</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p21.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Conversor de divisas</h3>
+                        <p>Kotlin </p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p15.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Registro de productos</h3>
+                        <p>Android SQLite </p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="proyecto">
+                    <img src="img/p20.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Registro de películas</h3>
+                        <p>Java</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p16.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Cronómetro</h3>
+                        <p>Java</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p18.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de inventario</h3>
+                        <p>Java</p>
+                    </div>
+                </div>
+
+
+
+                <div class="proyecto">
+                    <img src="img/p17.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Registro de personal</h3>
+                        <p>Java </p>
+                    </div>
+                </div>
+
+
+                <div class="proyecto">
+                    <img src="img/p8.jpg" alt="">
+                    <div class="overlay">
+                        <h3>VideoJuego</h3>
+                        <p>Android Studio</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
